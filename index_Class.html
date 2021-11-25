@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/5cf4133e47.js" crossorigin="anonymous"></script>
+
+    <title>Display Flex</title>
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+
+    <!-- <link href="css/all.css" rel="stylesheet"> load all styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div#container {
+
+            width: 900px;
+            height: 600px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        header {
+            width: 300px;
+            height: 600px;
+            background-color: lightgreen;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            box-sizing: border-box;
+        }
+
+        section {
+
+            width: 600px;
+            height:  600px;
+            background-color:  skyblue;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul#social-holder {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        ul#social-holder li {
+
+            margin: 0 10px;
+
+        }
+
+        i.fab {
+            color: pink;
+        }
+
+        i.fa-facebook {
+            color: blue;
+
+        }
+
+        i.fa-youtube {
+
+            color: red;
+        }
+
+        ul#menu li {
+            margin: 10px 0;
+        }
+
+        i.fa-solid {
+            margin-right: 10px;
+            height: 30px;
+            width: 30px;
+        }
+
+        div#product {
+
+            width: inherit;
+            height: 160px;
+            /* background-color: yellow; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+        div.item {
+
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div id="container">
+
+        <header>
+            <h1>Logo Here</h1>
+
+            <ul>
+                <li><i class="fa-solid fa-house-user"></i></i>Home</li>
+                <li><i class="fa-solid fa-address-book"></i></i>About</li>
+                <li><i class="fa-solid fa-phone-volume"></i></i>Contact</li>
+            </ul>
+
+            <ul id="social-holder">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+        </header>
+        <section>
+
+            <div id="product">
+
+                <div class="item">
+                    <img src="images/Frame-1.png"/>
+                    <h1>Item Number One</h1>
+                </div>
+                <div class="item">
+                    <img src="images/Frame-2.png"/>
+                    <h1>Item Number Two</h1>
+                </div>
+                <div class="item">
+                    <img src="images/Frame-3.png"/>
+                    <h1>Item Number Three</h1>
+                </div>
+
+                
+
+            </div>
+            <div class="item"></div>
+        </section>
+
+    </div>
+
+
+</body>
+
+</html>
