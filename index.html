@@ -4,13 +4,202 @@
     <title>Landing Page</title>
     <style>
 
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        div#container {
+
+            width: 1250px;
+            height: 2000px;
+            /* background-color: turquoise; */
+            margin: 0 auto;
+
+        }
+
+        div#header {
+
+            width: inherit;
+            height: 100px;
+            background-color: white;
+            font-family: serif;
+            font-size: 15px;
+            font-weight: 600;
+
+        }
+
+        div#header-logo {
+
+            float: left;
+            padding-top: 30px;
+
+        }
+
+        div#header-roundbox{
+
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: rgb(0, 132, 255);
+            position: relative;
+            left: 15px;
+            top: 4px;
+        }
+
+        div#header-logo p {
+
+            position: relative;
+            color: white;
+            top: -25px;
+            left: 30px;
+
+        }
+
+        div#header-logo h3 {
+
+            padding-left: 60px;
+            position: relative;
+            top: -40px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        div#header ul {
+
+            float:right;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        div#header li {
+
+            padding-top: 30px;
+            padding-right: 10px;
+            margin:  15px;
+        }
+    
+    /* Header Ends Here */
+
+        div#banner {
+
+            width: inherit;
+            height: 650px;
+            background-color: blue;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+
+        }
+
+        div.bannerP {
+
+            width: 625px;
+            height: 650px;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            
+            
+        }
+        
+        div.bannerP img{
+
+            position: relative;
+            top: 50px;
+        }
+
+        div.bannerP h3{
+
+            padding-top:200px; 
+            padding-left: 200px;
+            width: 420px;
+            text-align: justify;
+            font-size: 35px;
+            font-family: sans-serif;
+            word-spacing: 0%;
+            font-weight: 800;
+
+        }
+
+        div.bannerP p {
+            padding-top:10px; 
+            padding-left: 200px;
+            width: 400px;
+            text-align: justify;
+            font-size: 15px;
+            color: gray;
+            font-family: sans-serif;
+            font-weight: 500;
+            line-height: 25px;
+        }
+
+        div#bannerBox {
+
+            height: 45px;
+            width: 150px;
+            background-color:rgb(0, 132, 255) ;
+            border-radius: 20px;
+            position: relative;
+            top: 20px;
+            left: 200px;
+            z-index: 2;
+        }
+
+        div.bannerP h4{
+
+            position: relative;
+            z-index: 3;
+            color: white;
+            font-size: 16px;
+            left: -40px;
+            top: -10px
+        }
+
     </style>
 </head>
 
 <body>
     <div id="container">
-
         
+        <div id="header">
+
+            <div id="header-logo">
+                <div id="header-roundbox"></div>
+                <p>T</p>
+                <h3>Trafalgar</h3>
+
+            </div>
+            <div id="header-menu">
+
+                <ul>
+                    <li>Home</li>
+                    <li>Find a Doctor</li>
+                    <li>Apps</li>
+                    <li>Testimonials</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="banner">
+
+            <div class="bannerP">
+                <h3>Virtual healthcare for you</h3>
+                <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.</p>
+                <div id="bannerBox"></div>
+                <h4>Consult today</h4>
+            </div>
+            <div class="bannerP">
+                <img src="G:\Invoke_web\Day4\images\illustration.png" width="600"/>
+            </div>
+
+
+        </div>
 
 
 
