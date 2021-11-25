@@ -116,7 +116,7 @@
         div.bannerP h3{
 
             padding-top:200px; 
-            padding-left: 200px;
+            padding-left: 150px;
             width: 420px;
             text-align: justify;
             font-size: 35px;
@@ -128,7 +128,7 @@
 
         div.bannerP p {
             padding-top:10px; 
-            padding-left: 200px;
+            padding-left: 150px;
             width: 400px;
             text-align: justify;
             font-size: 15px;
@@ -146,7 +146,7 @@
             border-radius: 20px;
             position: relative;
             top: 20px;
-            left: 200px;
+            left: 150px;
             z-index: 2;
         }
 
@@ -156,8 +156,85 @@
             z-index: 3;
             color: white;
             font-size: 16px;
-            left: -40px;
+            left: -90px;
             top: -10px
+        }
+
+        /* Banner ends here. */
+
+
+        div#services {
+
+            width: inherit;
+            height: 200px;
+            /* background-color: chocolate; */
+
+        }
+
+        div#services h3 {
+
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 900;
+
+        }
+
+        div#servicesLine {
+
+            width: 55px;
+            height: 2px;
+            background-color: black;
+            position: relative;
+            left: 600px;
+            top: 15px;
+
+        }
+
+        div#services p {
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 14px;
+            padding-left: 120px;
+            width: 1050px;
+            font-weight: 600;
+            color: gray;
+            padding-top: 30px;
+            word-spacing: 1px;
+            line-height: 25px;
+        }
+
+        /* Services ENDS HERE */
+
+        div#product1 {
+
+            width: inherit;
+            height: 380px;
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        
+        }
+
+        div#product2 {
+
+            width: inherit;
+            height: 380px;
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+
+        div.item {
+
+            width: 300px;
+            height: 270px;
+            background-color: white;
         }
 
     </style>
@@ -195,13 +272,31 @@
                 <h4>Consult today</h4>
             </div>
             <div class="bannerP">
-                <img src="G:\Invoke_web\Day4\images\illustration.png" width="600"/>
+                <img src="/images/illustration.png" width="600"/>
             </div>
+        </div>
 
+        <div id="services">
+            <h3>Our Services</h3>
+            <div id="servicesLine"></div>
+            <p>We provide to you the best choices for you. Adjust it to your health needs and make sure you undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health.</p>
+        </div>
+
+        <div id="product1">
+
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
 
         </div>
 
+        <div id="product2">
 
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+        </div>
 
     </div>
 </body>
